@@ -8,6 +8,12 @@
   <strong>Adress: </strong><%= @restaurant.address %>
   <br>
   <strong>Phone Number: </strong><%= @restaurant.phone_number %>
+  <br>
+  <strong>Comment: </strong><%= @restaurant.reviews %>
+   <% @restaurants.each do |restaurant| %>
+  <li>
+  <%= link_to restaurant.review, restaurant_path(restaurant.id) %>
+  <br>
   </h3>
 </p>
 

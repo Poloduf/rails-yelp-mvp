@@ -3,6 +3,7 @@
   <% @restaurants.each do |restaurant| %>
   <li>
   <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+  <%= link_to "Add a review", new_restaurant_review_path(restaurant.id) %>
   </li>
 <% end %>
 </ul>
